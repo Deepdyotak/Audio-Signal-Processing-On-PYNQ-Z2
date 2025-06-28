@@ -1,5 +1,5 @@
-// We can directly read the inputs of the toggle switch on the FPGA board that is PYNQ-Z2 by python in jupyter notebok
-//code for that is
+# We can directly read the inputs of the toggle switch on the FPGA board that is PYNQ-Z2 by python in jupyter notebok
+# code for that is
 
 
 
