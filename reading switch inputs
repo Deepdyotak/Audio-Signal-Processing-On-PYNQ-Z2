@@ -1,0 +1,20 @@
+// We can directly read the inputs of the toggle switch on the FPGA board that is PYNQ-Z2 by python in jupyter notebok
+//code for that is
+
+
+
+from pynq.overlays.base import BaseOverlay
+base = BaseOverlay("base.bit")
+sw0 = base.switches[0].read()
+sw1 = base.switches[1].read()
+print(sw0)
+print(sw1)
+if sw0 == 0 and sw1 == 0:
+    print("hellooo1")
+
+elif sw0 == 0 and sw1 == 1:
+    print("hellooo2")
+elif sw0 == 1 and sw1 == 0:
+    print("hellooo3")
+elif sw0 == 1 and sw1 ==1 :
+    print("hellooo4")
